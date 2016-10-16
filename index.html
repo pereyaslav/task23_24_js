@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script data-main="js/main.js" src="js/require.js"></script>
+	<!-- <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+  </script> -->
+	<!-- <script type="text/javascript" src="js/tmpl.js"></script> -->
+	<!-- <script type="text/javascript" src="js/script.js"></script> -->
+</head>
+
+<body>
+	<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+			<ul class="item-list"> </ul>
+			<div class="controlls">
+				<input type="text" class="item-value">
+				<button class="item-add">add</button>
+				<button class="item-edit">save edit</button>
+				<div class="text-help">
+					<h6>
+ 		* Для редактирования щелкните по списку, для сохранения редактирования нажмите кнопку "save edit"
+ 	</h6> </div>
+				<div class="text-help">
+					<h6>
+ 		* Для добавления элемента к списку введите в поле текст и  нажмите кнопку "add"
+ 	</h6> </div>
+	<div class="text-help">
+					<h6>
+ 		* Для удаления элемента из списка нажмите "х" возле текста
+ 	</h6> </div>
+			</div>
+		</div>
+	</script>
+	<script type="text/template" id="list-template">
+		<% for (var i=0; i<data.length; i++) { %>
+			<li>
+				<%= data[i] %> <span data-value="<%= data[i] %>" class="item-delete">x</span></li>
+			<% }; %>
+	</script>
+</body>
+
+</html>

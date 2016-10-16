@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #e0d9e6;
+}
+
+.wrapper {
+	width: 600px;
+	margin: 10px auto;
+	padding: 10px;
+	font-family: arial, sans-serif;
+	background: #f3e5fe;
+}
+
+.item-list {
+	padding: 20px;
+}
+
+.text-help {
+	padding: 10px;
+}
